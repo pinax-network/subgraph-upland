@@ -1,0 +1,20 @@
+specVersion: 1.2.0
+description: Transactions, Decoded Actions & Database Operations
+repository: https://github.com/pinax-network/subgraph-template
+schema:
+  file: schema.graphql
+indexerHints:
+  prune: 2419200 # 14 days (2 blocks per second)
+dataSources:
+  - kind: substreams
+    name: tokens
+    network: wax
+    source:
+      startBlock: 326292294
+      package:
+        moduleName: graph_out
+        params: "code:eosio.token && notif:false"
+        file: ./substreams/wax-transactions-v0.3.9.spkg
+    mapping:
+      kind: substreams/graph-entities
+      apiVersion: 0.0.5

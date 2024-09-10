@@ -1,0 +1,10 @@
+{
+    "name": "tokens",
+    "displayName": "tokens",
+    "description": "Transactions, Decoded Actions & Database Operations",
+    "image": "ipfs://QmP5h8GAx6D7XpQMCDjtfGbecwx7z9wpmjLWYc5xb5Qtgs",
+    "subgraphImage": "https://api.thegraph.com/ipfs/api/v0/cat?arg=QmP5h8GAx6D7XpQMCDjtfGbecwx7z9wpmjLWYc5xb5Qtgs",
+    "codeRepository": "https://github.com/pinax-network/subgraph-template",
+    "website": "https://pinax.network",
+    "categories": null
+}
