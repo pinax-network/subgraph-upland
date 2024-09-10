@@ -1,8 +1,7 @@
 .PHONY: all
 all:
 	make build
-	make create
-	make deploy
+	substreams info ./substreams/eos-transactions-v0.3.9.spkg
 
 .PHONY: build
 build:
@@ -10,17 +9,15 @@ build:
 
 .PHONY: deploy
 deploy:
-	graph deploy --node=http://localhost:8020 tokens
-
-.PHONY: create
-create:
-	graph create --node http://localhost:8020 tokens
+	graph build
+	graph create --node http://localhost:8020 upland
+	graph deploy --node=http://localhost:8020 upland
 
 .PHONY: publish
 publish:
 	graph build
-	graph publish --subgraph-id "<SUBGRAPH ID>"
+	graph publish --subgraph-id 68hLjdJHCYMufv8UUN56aEZ4XV4ERgFnAwbLARnNX6wz
 
 .PHONY: gui
 gui:
-	substreams gui ./substreams/wax-transactions-v0.3.8.spkg -e wax.substreams.pinax.network:443 graph_out -s 326292294 --params "graph_out=code:eosio.token && notif:false"
+	substreams gui ./substreams/eos-transactions-v0.3.9.spkg -e eos.substreams.pinax.network:443 graph_out -s 390796092 --params "graph_out=(code:playuplandme || code:uplandnftact || code:upxtokenacct) && notif:false"
