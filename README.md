@@ -20,6 +20,7 @@
 - **API Key**: https://thegraph.com/studio/apikeys/
 - **Base URL**: https://gateway.thegraph.com/api
 - **Subgraph ID**: [`68hLjdJHCYMufv8UUN56aEZ4XV4ERgFnAwbLARnNX6wz`](https://thegraph.com/explorer/subgraphs/68hLjdJHCYMufv8UUN56aEZ4XV4ERgFnAwbLARnNX6wz?view=Query&chain=arbitrum-one)
+- **Subgraph NFT**: `34494355199261144729623062330884641703975822318042303183496619944705633044937`
 - **Query URL format**: `{base_url}`/api/`{api-key}`/subgraphs/id/`{subgraph_id}`
 
 ## GraphQL
